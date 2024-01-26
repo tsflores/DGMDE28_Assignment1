@@ -1,0 +1,484 @@
+
+
+* {
+  box-sizing: border-box;
+}
+
+/* Establish styling elements that can be referenced as needed */
+:root {
+  --div-bgcolor: white;
+  --nav-background-color: #bf2e1a;
+  --nav-hover-color: #720303;
+  --nav-hover-text-color: black;
+  --nav-text-color: white;
+  --text-color: black;
+  --footer-bkground-color: #e8e8e8;
+  --img-border: #ddd;
+  --tagline-color: rgb(174, 49, 4);
+  --tagline-font-family: 'Pacifico', cursive, sans-serif;
+  --special-font-family: 'Lato', sans-serif;
+  --generic-font-family: Calibri, Helvettica, sans-serif;
+  --general-color: black;
+}
+
+
+/* Apply styling elements that will impact all pages on the site */
+body {
+  margin: auto;
+  font-family: var(--generic-font-family);
+}
+
+header {
+  background-color: var(--div-bgcolor);
+  color: var(--text-color);
+  margin-top: 1rem;
+}
+
+/* Styling elements related to the images on specific pages */
+
+main div.articles {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-bottom: 1rem;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  max-width: 95%;
+}
+
+main div.articles article {
+  flex-basis: 100%;
+  padding: 1rem;
+}
+
+img {
+  width: 100%;
+  /*set to 100% of the element an image is contained within */
+}
+
+.articles h3 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+.articles p {
+  padding: 0 0.75rem;
+  word-spacing: 0.2rem;
+  margin: 0;
+  font-size: 3vw;
+}
+
+.articles h3 a:link,
+.articles h3 a:visited,
+.articles h3 a:hover,
+.articles h3 a:active {
+  color: var(--tagline-color);
+  text-decoration: none;
+}
+
+.articles h3 a:hover {
+  background-color: var(--nav-hover-color);
+  color: var(--nav-text-color);
+}
+
+/*****************************************************************/
+/***************** Styling elements for text / images on form ****/
+/*****************************************************************/
+
+.form-container {
+  display: grid;
+  width: 100%;
+  margin: 0;
+  align-items: start;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  padding: 1rem;
+  border-top: solid 1rem var(--nav-background-color);
+}
+
+.box-2 {
+  grid-row: 1;
+  width: 100%;
+}
+
+
+.box-2 {
+  grid-column: 2;
+  width: 100%;
+  justify-self: center;
+}
+
+.box-1 {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box-1 img {
+  width: 40%;
+  padding: 2rem;
+  padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.input {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.input h4,
+.input h6,
+.input p {
+  font-size: 3.8vw;
+  align-self: center;
+  text-align: center;
+  margin: 0;
+  padding: 20px 30px 0 30px;
+  font-family: var(--special-font-family);
+}
+
+.input h6,
+.input p {
+  padding-bottom: 20px;
+  font-size: 3vw;
+}
+
+.input p {
+  text-align: left;
+  font-family: var(--generic-font-family);
+  padding-left: 2rem;
+  padding-top: 0;
+}
+
+/**********************************************************************/
+/************************* Syling elements for forms ******************/
+/**********************************************************************/
+
+#myForm {
+  padding-left: 1.5rem;
+}
+
+div p a:link,
+div p a:visited,
+div p a:active {
+  text-decoration: none;
+  color: var(--general-color);
+}
+
+div p a:hover {
+  text-decoration: underline;
+}
+
+form label,
+form button,
+form input {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+form button {
+  background-color: var(--nav-background-color);
+  border-style: none;
+  color: white;
+  font-style: var(--special-font-family);
+  font-weight: bold;
+}
+
+form input {
+  width: 80%;
+}
+
+form input[type=text],
+form input[type=email] {
+  font-size: 1.25rem;
+}
+
+form button[type=submit] {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+
+figure {
+  margin: 0.5rem;
+}
+
+figcaption {
+  font-size: 3vw;
+}
+
+/**************************************************************************** 
+*  Styling elements that will apply to the footer on each page of the site *
+****************************************************************************/
+
+footer {
+  background-color: var(--footer-bkground-color);
+  width: 100%;
+  display: block;
+}
+
+.footer-container {
+  padding-top: 1rem;
+  display: block;
+}
+
+.footer-lists {
+  list-style: none;
+  font-size: 1rem;
+  padding-left: 2rem;
+  font-size: 1.2rem;
+}
+
+.footer-lists li {
+  line-height: 6vw;
+  justify-self: end;
+  font-size: 4vw;
+}
+
+.footer-lists a:link,
+.footer-lists a:visited,
+.footer-lists a:hover,
+.footer-lists a:active {
+  color: var(--tagline-color);
+  text-decoration: none;
+}
+
+.footer-lists a:hover {
+  background-color: var(--nav-hover-color);
+  color: var(--nav-text-color);
+}
+
+div.sub-footer {
+  background-color: var(--nav-background-color);
+  margin-bottom: 0.5rem;
+}
+
+div.sub-footer p {
+  padding-left: 2rem;
+  line-height: 0.8rem;
+  margin: 0rem;
+  font-size: 2vw;
+  color: white;
+}
+
+div.sub-footer p a:link,
+div.sub-footer p a:active,
+div.sub-footer p a:hover,
+div.sub-footer p a:visited {
+  text-decoration: underline;
+  color: white;
+}
+
+/* ==========================================
+   styles for pristinejs library 
+   ========================================== */
+.form-group {
+  padding-left: 0.5rem;
+}
+
+.pristine-error::before {
+  content: "\274C";
+  padding-left: 5px;
+  padding-right: 3px;
+}
+
+.has-success::before {
+  content: "\2714";
+  padding-left: 0px;
+  padding-right: 0px;
+  color: green;
+}
+
+.text-help {
+  font-size: 0.8em;
+  margin-top: 0.5em;
+}
+
+.has-danger .pristine-error {
+  color: #dc1d34;
+}
+
+/**************** Styling rules that will apply to wider screens greater than 667 px *******************/
+
+@media screen and (min-width: 675px) {
+
+  .logo {
+    height: 5rem;
+    margin: 0;
+    padding: 0.5rem;
+    margin-left: 2rem;
+  }
+
+  .logo img {
+    padding-left: 3rem;
+  }
+
+  .intro p {
+    font-size: 1.25vw;
+    width: 70%;
+  }
+
+  .intro h1,
+  .resources h1 {
+    gap: 1rem;
+    font-size: 3vw;
+  }
+
+  main div.articles article {
+    flex: 1 1 30%;
+    padding: 1rem;
+  }
+
+  .overlay-text p {
+    padding: 0 1rem 0.5rem 1rem;
+  }
+
+  .articles p {
+    font-size: 1vw;
+  }
+
+  figcaption {
+    font-size: 1vw;
+  }
+
+  div.sub-footer {
+    padding: 0.5rem 0;
+    display: flex;
+    justify-content: center;
+  }
+
+  div.sub-footer p {
+    margin: 0rem;
+    padding: 0 1rem;
+    border-right: solid white;
+    line-height: 1.5rem;
+    font-size: 1.1vw;
+  }
+
+  div.sub-footer p:last-child {
+    border-color: transparent;
+  }
+
+  footer h2,
+  footer h3 {
+    text-align: start;
+    font-size: 1.7vw;
+  }
+
+  .footer-popular {
+    border-bottom: none;
+    padding-left: 5rem;
+  }
+
+  .footer-lists {
+    list-style: none;
+    font-size: 1rem;
+    padding: 0;
+    font-size: 1.2rem;
+  }
+
+  .footer-lists li {
+    line-height: 2vw;
+    font-size: 1.3vw;
+  }
+
+  #map-container {
+    height: 80%;
+    width: 80%;
+    border: thin solid;
+    border-radius: 1rem;
+    align-self: center;
+    display: flex;
+    flex: 1 1 100%;
+  }
+
+  .footer-container {
+    display: grid;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+    padding: 1rem;
+    align-items: start;
+    column-gap: 4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+.event-details {
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 
+  "image details"
+  ". link";
+  padding-bottom: 5rem;
+}
+
+.calendar-img{
+  width: 60%;
+  padding-right: 1rem;
+  justify-self: end;
+}
+
+.eventInfo{
+  place-self: center stretch;
+}
+
+.eventInfo h2{
+  font-size: 2vw;
+  padding-bottom: 0.5rem;
+}
+
+.eventInfo h3{
+  font-size: 1.5vw;
+  line-height: 1rem;
+}
+
+.detailsLink{
+  justify-self: start;
+}
+.detailsLink a{
+ font-size: 1.5vw;
+ padding: 0.5rem 1rem;
+}
+
+}
+
+@media screen and (min-width: 960px) {
+
+  /* changing navigation to remove collapsed version for screen larger than 960px */
+  /* established screen size based on standard tablets */
+
+
+  .form-container {
+    padding: 1rem;
+    column-gap: 2rem;
+    grid-template-columns: 1fr 1fr;
+    border-top: solid 2rem var(--nav-background-color);
+  }
+
+  .box-2 {
+    grid-column: 2;
+    width: 100%;
+    justify-self: center;
+  }
+
+  .input h4,
+  .input h6,
+  .input p {
+    font-size: 2vw;
+  }
+
+  .input h6,
+  .input p {
+    font-size: 1vw;
+  }
+
+#myForm {
+  padding-left: 4rem;
+}
+}
