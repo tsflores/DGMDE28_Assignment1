@@ -61,7 +61,7 @@ figcaption {
 
 .box-2 p,
 .box-2 ul li {
-  font-size: 0.75vw;
+  font-size: 1vw;
   text-align: justify;
 }
 
@@ -85,17 +85,6 @@ figcaption {
   padding-left: 1.5rem;
 }
 
-div p a:link,
-div p a:visited,
-div p a:active {
-  text-decoration: none;
-  color: var(--general-color);
-}
-
-div p a:hover {
-  text-decoration: underline;
-}
-
 form label,
 form button,
 form input {
@@ -104,15 +93,14 @@ form input {
 }
 
 form button {
-  background-color: var(--nav-background-color);
+  background-color: #bf2e1a;
   border-style: none;
   color: white;
-  font-style: var(--special-font-family);
   font-weight: bold;
 }
 
 form input {
-  width: 80%;
+  width: 75%;
 }
 
 form input[type=text],
@@ -125,8 +113,6 @@ form button[type=submit] {
   padding: 0.5rem;
   border-radius: 1rem;
 }
-
-
 
 /**************************************************************************** 
 *  Styling elements that will apply to the footer *
@@ -152,34 +138,5 @@ footer a:hover,
 footer a:visited {
   text-decoration: underline;
   color: white;
-}
-
-/* ==========================================
-   styles for pristinejs library 
-   ========================================== */
-.form-group {
-  padding-left: 0.5rem;
-}
-
-.pristine-error::before {
-  content: "\274C";
-  padding-left: 5px;
-  padding-right: 3px;
-}
-
-.has-success::before {
-  content: "\2714";
-  padding-left: 0px;
-  padding-right: 0px;
-  color: green;
-}
-
-.text-help {
-  font-size: 0.8em;
-  margin-top: 0.5em;
-}
-
-.has-danger .pristine-error {
-  color: #dc1d34;
 }
 
