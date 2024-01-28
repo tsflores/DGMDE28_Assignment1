@@ -11,9 +11,10 @@
 </head>
 
 <body>
-
+<header>
+  <h1 style="margin: 0">About Me - Trinidad Flores</h1>
+</header>
   <main>
-    <section class="form-container">
       <div class="box-1">
         <figure>
           <img src="CherryStBrewery.jpg" alt="Sports Bar">
@@ -24,29 +25,28 @@
         <figure>
           <img src="fallFestival1280.webp" alt="Cycling">
           <figcaption>
-            Favorite Activty: Cycling
+            Favorite Activity: Cycling
           </figcaption>
         </figure>
         <figure>
           <img src="TheBigHouse.jpg" alt="Michigan Stadium">
           <figcaption>
-            Favorite College Team: Michigan Football
+            MBA: Ross School of Business
           </figcaption>
         </figure>
         <figure>
           <img src="MIT.jpg" alt="Massachusetts Institute of Technology">
           <figcaption>
-            Undergrad Degree: Chemical Engineering from MIT
+            Undergrad: Chemical Engineering from MIT
           </figcaption>
         </figure>
       </div>
       <div class="box-2">
-        <h1 style="text-align: center; font-size: 2vw"> About Me </h1>
+        <h1 style="text-align: center; font-size: 2rem"> A Few Facts... </h1>
         <p>
-          My name is Trinidad, recently enrolled in DGMD E-28 through the Harvard Extension School. Here's a little
+          My name is Trinidad, and I recently enrolled in DGMD E-28 through the Harvard Extension School. Here's a little
           information about me to get you started. Of course, if you're interested in learning more or following my
-          exploits, please sign
-          up for my newsletter. It's published monthly. You won't be disappointed.
+          exploits, please sign up for my newsletter. It's published monthly. You won't be disappointed.
         </p>
         <ul>
           <li> I was born and raised in a small town in Northwest Ohio</li>
@@ -69,21 +69,23 @@
           Python, and Visual Basic.</p>
         <p> If you like what you've read so far, then go ahead and subscribe to my newsletter. You can cancel at any
           time and I promise no spam / marketing email.</p>
-          <h2 style="color: #bf2e1a;"> Sign up to receive my monthly newsletter with updates on my activities</h2>
-          <h3> Start with your first newsletter, cancel any time </h3>
+          <p style="color: #bf2e1a; font-weight: bold"> Sign up to receive my monthly newsletter with updates on my activities</p>
+          <p> Start with your first newsletter, cancel any time </p>
           <!-- using formspree as an action with communication to my email inbox -->
           <form id="myForm" method="post" action="https://formspree.io/f/xjvqnazg">
-            <label class="form-group"> First Name
-              <input id="first_name" name="first_name" type="text" required /> </label>
-            <label class="form-group"> Last Name
-              <input id="last_name" name="last_name" type="text" required /> </label>
-            <label class="form-group">Email
-              <input id="email" name="email" type="email" required /> </label>
+            <label> First Name
+              <input name="first_name" type="text" required /> </label>
+            <label> Last Name
+              <input name="last_name" type="text" required /> </label>
+            <label> Email
+              <input name="email" type="email" required /> </label>
+            <label class="checkboxAlign">
+                <input id="consent" type="checkbox" name="consent" required> 
+               I agree to terms and conditions and understand that I can opt-out at any time. 
+            </label> 
             <button type="submit">Submit Form</button>
           </form>
-          <h3>By signing up for the newsletter, I understand I can opt-out of marketing material at any time.</h3>
       </div>
-    </section>
   </main>
 
   <footer>
